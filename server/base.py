@@ -51,7 +51,7 @@ async def create_element(name: str, author: str, disc: str, file_1: UploadFile =
     text = contents.decode('utf-8')
     words = text.split()
     word_count = len(words)
-    flags_count = word_count/10000
+    flags_count = word_count/10
     if (flags_count < 1):
         flags_count = 5
     doc = nlp(text)
